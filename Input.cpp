@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 /* PROGRAM 1
 int main(void){
@@ -14,7 +15,7 @@ int main(void){
     return 0;
 } */
 
-/*PROGRAM 2*/
+/*PROGRAM 2
 int main(void){
     const int MAX_SIZE=100;
     char input[MAX_SIZE];
@@ -28,4 +29,15 @@ int main(void){
 
     cout << "Hello " << input << ". Your age is - " << age <<endl;
     return 0; 
+}
+*/
+
+/*PROGRAM 3*/
+int main(int argc,char* argv[]){
+    if (argc<=2){
+        cout << "Run the program with a string and number" << endl ;
+        return 1;
+    }
+    cout << "Hello " << argv[1] << " Age " << stoi(argv[2]) << endl;
+    return 0;
 }
