@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+/* PROGRAM 1
 int main(void){
     const int MAX_SIZE=100;
     char input[MAX_SIZE];
@@ -11,4 +12,20 @@ int main(void){
     cout << "Hi " << input << endl;
 
     return 0;
+} */
+
+/*PROGRAM 2*/
+int main(void){
+    const int MAX_SIZE=100;
+    char input[MAX_SIZE];
+
+    cout <<  "Who are you?" << endl;
+    cin.getline(input,MAX_SIZE);
+    
+    cout << "Whats your age ?" <<endl;
+    int age;
+    cin >> age;
+
+    cout << "Hello " << input << ". Your age is - " << age <<endl;
+    return 0; 
 }
