@@ -1,6 +1,26 @@
 #include <iostream>
 using namespace std;
 #include <string>
+// A variable declared inside a block in C++ can only be accesed inside that block be it if , else , main etc. unlike python.
+/*#include <iostream>
+using namespace std;
+
+int g;  // global variable
+
+int main() {
+    g = 10;   // valid, can use it anywhere
+    int c;
+    if (true) {
+        int g = 20;   // valid, global variable accessible inside block
+        c = g + 10;
+        cout << c << endl;
+    }
+    cout << g << endl; // prints 20
+    return 0;
+}
+*/
+
+
 /*Program 1
 int main(void){
     float a = 5.5;
